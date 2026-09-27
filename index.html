@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Type Your Name - Personal Portfolio Website">
-    <meta name="author" content="Type Your Name">
+    <meta name="description"
+        content="SEO Executive Portfolio - SEO, Digital Marketing, Technical SEO, Content Strategy and Organic Growth.">
 
-    <title>Type Your Name | Portfolio</title>
+    <meta name="author" content="YOUR NAME">
 
-    <!-- Google Font -->
+    <title>YOUR NAME | SEO Executive</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
-    <!-- =========================
-         EYEBALL BACKGROUND
-    ========================== -->
+    <!-- =========================================
+         BACKGROUND EYES
+    ========================================== -->
 
-    <div class="eye-background" id="eyeBackground"></div>
+    <div class="eye-background">
 
-    <!-- Background Glow -->
-    <div class="background-glow glow-one"></div>
-    <div class="background-glow glow-two"></div>
+        <div class="eye eye-left">
+            <div class="iris">
+                <div class="pupil">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="eye eye-right">
+            <div class="iris">
+                <div class="pupil">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
-    <!-- =========================
+    <!-- Background gradient -->
+    <div class="background-glow"></div>
+
+
+    <!-- =========================================
          HEADER
-    ========================== -->
+    ========================================== -->
 
     <header class="header">
 
         <nav class="navbar">
 
+            <!-- Logo -->
             <a href="#home" class="logo">
-                <span>&lt;</span>YourName<span>/&gt;</span>
+                <span>&lt;</span>
+                YOURNAME
+                <span>/&gt;</span>
             </a>
 
-            <button class="menu-toggle" id="menuToggle">
-                ☰
-            </button>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <!-- Navigation -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
             </ul>
 
-            <a href="#contact" class="nav-button">
+
+            <!-- Header CTA -->
+            <a href="#contact" class="header-button">
                 Let's Talk
             </a>
 
@@ -65,89 +111,114 @@
     </header>
 
 
-    <!-- =========================
-         MAIN
-    ========================== -->
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
 
     <main>
 
-        <!-- HERO -->
+
+        <!-- =========================================
+             HERO SECTION
+        ========================================== -->
 
         <section class="hero section" id="home">
 
             <div class="hero-content">
 
-                <p class="hero-small">
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR OPPORTUNITIES
+                </div>
+
+
+                <p class="hero-intro">
                     Hello, I'm
                 </p>
 
+
                 <h1>
-                    <span>Type Your</span>
-                    <strong>Name</strong>
+                    YOUR
+                    <span>NAME.</span>
                 </h1>
 
+
                 <h2>
-                    Your Profession <span>•</span> Your Specialization
+                    SEO Executive
+                    <span>•</span>
+                    Digital Marketing
+                    <span>•</span>
+                    Organic Growth
                 </h2>
 
+
                 <p class="hero-description">
-                    Write a short introduction about yourself here.
-                    Tell visitors what you do, what you are passionate about,
-                    and what makes your work unique.
+                    I help businesses improve their online visibility,
+                    attract relevant organic traffic and build sustainable
+                    search growth through data-driven SEO strategies.
                 </p>
+
 
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="primary-button">
-                        View My Work
+                    <a href="#projects" class="button primary-button">
+                        Explore My Work
                         <span>↗</span>
                     </a>
 
-                    <a href="assets/resume.pdf"
-                       class="secondary-button"
-                       download>
-                        Download Resume
+                    <a href="#contact" class="button secondary-button">
+                        Let's Connect
                     </a>
 
                 </div>
 
-                <div class="social-links">
 
-                    <a href="#" target="_blank">LinkedIn</a>
-                    <a href="#" target="_blank">GitHub</a>
-                    <a href="#" target="_blank">Instagram</a>
+                <div class="hero-socials">
+
+                    <a href="#" target="_blank">
+                        LinkedIn
+                    </a>
+
+                    <a href="#" target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="#" target="_blank">
+                        Instagram
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <div class="hero-visual">
+            <!-- Hero right side -->
 
-                <div class="profile-card">
+            <div class="hero-side">
 
-                    <div class="card-top">
-                        <span>AVAILABLE FOR WORK</span>
-                        <div class="online-dot"></div>
+                <div class="hero-card">
+
+                    <div class="card-label">
+                        SEO / DIGITAL MARKETING
                     </div>
 
-                    <div class="profile-image">
-                        <img src="images/profile.jpg"
-                             alt="Type Your Name">
+                    <div class="card-number">
+                        01
                     </div>
 
-                    <div class="profile-info">
+                    <div class="card-line"></div>
 
-                        <h3>Type Your Name</h3>
+                    <p>
+                        Search visibility isn't just about rankings.
+                        It's about reaching the right audience at the
+                        right moment.
+                    </p>
 
-                        <p>
-                            Your Profession
-                        </p>
-
-                    </div>
-
-                    <div class="profile-location">
-                        📍 Your City, Country
+                    <div class="card-bottom">
+                        <span>SEO</span>
+                        <span>GROWTH</span>
+                        <span>DATA</span>
                     </div>
 
                 </div>
@@ -157,56 +228,69 @@
         </section>
 
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
+
+        <!-- =========================================
+             ABOUT SECTION
+        ========================================== -->
 
         <section class="section about-section" id="about">
 
-            <div class="section-heading">
-                <span>01</span>
-                <p>ABOUT ME</p>
+            <div class="section-top">
+
+                <div class="section-number">
+                    01
+                </div>
+
+                <div class="section-label">
+                    ABOUT ME
+                </div>
+
             </div>
+
 
             <div class="about-grid">
 
-                <div class="about-title">
+                <div class="about-heading">
 
                     <h2>
-                        Turning ideas into
-                        <span>meaningful work.</span>
+                        Turning search
+                        <span>into growth.</span>
                     </h2>
 
                 </div>
 
-                <div class="about-text">
+
+                <div class="about-content">
 
                     <p>
-                        Write your introduction here. Explain who you are,
-                        what you do, your professional journey and the type
-                        of work you enjoy.
+                        Write your professional introduction here.
+                        Explain who you are, your SEO journey,
+                        your professional background and what you
+                        enjoy working on.
                     </p>
 
                     <p>
-                        You can also mention your education, achievements,
-                        experience and your future goals in this section.
+                        Add information about your approach to SEO,
+                        your experience with different industries,
+                        and the kind of results you aim to create.
                     </p>
 
-                    <div class="about-stats">
 
-                        <div>
+                    <div class="stats">
+
+                        <div class="stat">
                             <strong>00+</strong>
                             <span>Projects</span>
                         </div>
 
-                        <div>
+                        <div class="stat">
                             <strong>00+</strong>
                             <span>Years Experience</span>
                         </div>
 
-                        <div>
+                        <div class="stat">
                             <strong>00+</strong>
-                            <span>Clients</span>
+                            <span>Websites</span>
                         </div>
 
                     </div>
@@ -218,26 +302,36 @@
         </section>
 
 
-        <!-- =========================
-             SKILLS
-        ========================== -->
+
+        <!-- =========================================
+             SEO SKILLS
+        ========================================== -->
 
         <section class="section skills-section" id="skills">
 
-            <div class="section-heading">
-                <span>02</span>
-                <p>MY SKILLS</p>
+            <div class="section-top">
+
+                <div class="section-number">
+                    02
+                </div>
+
+                <div class="section-label">
+                    EXPERTISE
+                </div>
+
             </div>
 
-            <div class="skills-heading">
+
+            <div class="section-heading">
 
                 <h2>
-                    What I
-                    <span>do best.</span>
+                    What I work
+                    <span>with.</span>
                 </h2>
 
                 <p>
-                    Replace these skills with your own professional skills.
+                    Replace these skills with your actual SEO
+                    expertise and tools.
                 </p>
 
             </div>
@@ -245,70 +339,187 @@
 
             <div class="skills-grid">
 
+
+                <!-- Skill 01 -->
+
                 <div class="skill-card">
 
-                    <span class="skill-number">01</span>
+                    <span class="skill-number">
+                        01
+                    </span>
 
-                    <div class="skill-icon">✦</div>
+                    <div class="skill-icon">
+                        SEO
+                    </div>
 
-                    <h3>Your Skill</h3>
+                    <h3>
+                        On-Page SEO
+                    </h3>
 
                     <p>
-                        Add a short description of your skill and expertise.
+                        Keyword optimization, content structure,
+                        internal linking, meta optimization and
+                        search intent.
                     </p>
 
-                    <div class="skill-line"></div>
+                    <div class="skill-tags">
+                        <span>Keywords</span>
+                        <span>Content</span>
+                        <span>Internal Links</span>
+                    </div>
 
                 </div>
 
 
+                <!-- Skill 02 -->
+
                 <div class="skill-card">
 
-                    <span class="skill-number">02</span>
+                    <span class="skill-number">
+                        02
+                    </span>
 
-                    <div class="skill-icon">◈</div>
+                    <div class="skill-icon">
+                        TS
+                    </div>
 
-                    <h3>Your Skill</h3>
+                    <h3>
+                        Technical SEO
+                    </h3>
 
                     <p>
-                        Add a short description of your skill and expertise.
+                        Technical audits, crawlability, indexing,
+                        Core Web Vitals, site structure and
+                        technical improvements.
                     </p>
 
-                    <div class="skill-line"></div>
+                    <div class="skill-tags">
+                        <span>Crawling</span>
+                        <span>Indexing</span>
+                        <span>Audit</span>
+                    </div>
 
                 </div>
 
 
+                <!-- Skill 03 -->
+
                 <div class="skill-card">
 
-                    <span class="skill-number">03</span>
+                    <span class="skill-number">
+                        03
+                    </span>
 
-                    <div class="skill-icon">◇</div>
+                    <div class="skill-icon">
+                        GA
+                    </div>
 
-                    <h3>Your Skill</h3>
+                    <h3>
+                        SEO Analytics
+                    </h3>
 
                     <p>
-                        Add a short description of your skill and expertise.
+                        Performance analysis, organic traffic,
+                        ranking trends, conversions and
+                        SEO reporting.
                     </p>
 
-                    <div class="skill-line"></div>
+                    <div class="skill-tags">
+                        <span>GA4</span>
+                        <span>GSC</span>
+                        <span>Reports</span>
+                    </div>
 
                 </div>
 
 
+                <!-- Skill 04 -->
+
                 <div class="skill-card">
 
-                    <span class="skill-number">04</span>
+                    <span class="skill-number">
+                        04
+                    </span>
 
-                    <div class="skill-icon">⌁</div>
+                    <div class="skill-icon">
+                        LK
+                    </div>
 
-                    <h3>Your Skill</h3>
+                    <h3>
+                        Link Building
+                    </h3>
 
                     <p>
-                        Add a short description of your skill and expertise.
+                        Building relevant and quality backlinks
+                        through strategic off-page SEO activities.
                     </p>
 
-                    <div class="skill-line"></div>
+                    <div class="skill-tags">
+                        <span>Backlinks</span>
+                        <span>Outreach</span>
+                        <span>Authority</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Skill 05 -->
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        05
+                    </span>
+
+                    <div class="skill-icon">
+                        KW
+                    </div>
+
+                    <h3>
+                        Keyword Research
+                    </h3>
+
+                    <p>
+                        Finding relevant keywords based on search
+                        intent, competition, volume and business goals.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Research</span>
+                        <span>Intent</span>
+                        <span>Strategy</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Skill 06 -->
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        06
+                    </span>
+
+                    <div class="skill-icon">
+                        CT
+                    </div>
+
+                    <h3>
+                        Content Strategy
+                    </h3>
+
+                    <p>
+                        Creating topic-focused content strategies
+                        designed to improve relevance and organic
+                        visibility.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Topics</span>
+                        <span>Clusters</span>
+                        <span>Content</span>
+                    </div>
 
                 </div>
 
@@ -317,172 +528,54 @@
         </section>
 
 
-        <!-- =========================
-             PROJECTS
-        ========================== -->
 
-        <section class="section projects-section" id="projects">
+        <!-- =========================================
+             TOOLS SECTION
+        ========================================== -->
 
-            <div class="section-heading">
-                <span>03</span>
-                <p>SELECTED WORK</p>
-            </div>
+        <section class="tools-section">
 
-            <div class="projects-heading">
+            <div class="tools-inner">
 
-                <h2>
-                    Things I've
-                    <span>worked on.</span>
-                </h2>
+                <span>TOOLS I WORK WITH</span>
 
-            </div>
+                <div class="tools-list">
 
+                    <strong>Google Search Console</strong>
+                    <strong>Google Analytics</strong>
+                    <strong>Ahrefs</strong>
+                    <strong>Semrush</strong>
+                    <strong>Screaming Frog</strong>
+                    <strong>Google Keyword Planner</strong>
 
-            <div class="projects-grid">
-
-
-                <!-- PROJECT 1 -->
-
-                <article class="project-card">
-
-                    <div class="project-image">
-
-                        <img src="images/project-1.jpg"
-                             alt="Project 1">
-
-                        <div class="project-overlay">
-
-                            <a href="#"
-                               target="_blank">
-                                View Project ↗
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="project-details">
-
-                        <div>
-                            <span>01</span>
-                            <h3>Project Name</h3>
-                        </div>
-
-                        <p>
-                            Write a short description of your project here.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 2 -->
-
-                <article class="project-card">
-
-                    <div class="project-image">
-
-                        <img src="images/project-2.jpg"
-                             alt="Project 2">
-
-                        <div class="project-overlay">
-
-                            <a href="#"
-                               target="_blank">
-                                View Project ↗
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="project-details">
-
-                        <div>
-                            <span>02</span>
-                            <h3>Project Name</h3>
-                        </div>
-
-                        <p>
-                            Write a short description of your project here.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Design</span>
-                            <span>SEO</span>
-                            <span>Marketing</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 3 -->
-
-                <article class="project-card">
-
-                    <div class="project-image">
-
-                        <img src="images/project-3.jpg"
-                             alt="Project 3">
-
-                        <div class="project-overlay">
-
-                            <a href="#"
-                               target="_blank">
-                                View Project ↗
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="project-details">
-
-                        <div>
-                            <span>03</span>
-                            <h3>Project Name</h3>
-                        </div>
-
-                        <p>
-                            Write a short description of your project here.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Branding</span>
-                            <span>Content</span>
-                            <span>Strategy</span>
-                        </div>
-
-                    </div>
-
-                </article>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
+
+        <!-- =========================================
              EXPERIENCE
-        ========================== -->
+        ========================================== -->
 
         <section class="section experience-section" id="experience">
 
-            <div class="section-heading">
-                <span>04</span>
-                <p>EXPERIENCE</p>
+            <div class="section-top">
+
+                <div class="section-number">
+                    03
+                </div>
+
+                <div class="section-label">
+                    EXPERIENCE
+                </div>
+
             </div>
 
-            <div class="experience-heading">
+
+            <div class="section-heading">
 
                 <h2>
                     My professional
@@ -492,69 +585,424 @@
             </div>
 
 
-            <div class="timeline">
+            <div class="experience-list">
 
-                <div class="timeline-item">
 
-                    <div class="timeline-date">
+                <!-- Experience 01 -->
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
                         2024 — PRESENT
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="experience-main">
 
-                        <h3>Your Job Title</h3>
+                        <h3>
+                            SEO Executive
+                        </h3>
 
-                        <h4>Company Name</h4>
+                        <h4>
+                            COMPANY NAME
+                        </h4>
 
                         <p>
-                            Write your responsibilities, achievements
-                            and important work experience here.
+                            Add your responsibilities, achievements,
+                            campaigns handled, websites worked on and
+                            measurable SEO improvements here.
                         </p>
+
+                        <div class="experience-tags">
+                            <span>SEO</span>
+                            <span>On-Page</span>
+                            <span>Off-Page</span>
+                            <span>Analytics</span>
+                        </div>
 
                     </div>
 
-                </div>
+                </article>
 
 
-                <div class="timeline-item">
+                <!-- Experience 02 -->
 
-                    <div class="timeline-date">
+                <article class="experience-item">
+
+                    <div class="experience-date">
                         2022 — 2024
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="experience-main">
 
-                        <h3>Your Previous Role</h3>
+                        <h3>
+                            PREVIOUS POSITION
+                        </h3>
 
-                        <h4>Previous Company</h4>
+                        <h4>
+                            COMPANY NAME
+                        </h4>
 
                         <p>
-                            Add information about your previous professional
-                            experience here.
+                            Add details about your previous role,
+                            responsibilities and key contributions.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>SEO</span>
+                            <span>Content</span>
+                            <span>Research</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Experience 03 -->
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        2021 — 2022
+                    </div>
+
+                    <div class="experience-main">
+
+                        <h3>
+                            INTERNSHIP / EARLY EXPERIENCE
+                        </h3>
+
+                        <h4>
+                            COMPANY / ORGANIZATION
+                        </h4>
+
+                        <p>
+                            Add your early professional experience,
+                            internship or relevant learning journey here.
                         </p>
 
                     </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             PROJECTS
+        ========================================== -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="section-top">
+
+                <div class="section-number">
+                    04
+                </div>
+
+                <div class="section-label">
+                    SELECTED PROJECTS
+                </div>
+
+            </div>
+
+
+            <div class="section-heading">
+
+                <h2>
+                    Work that made an
+                    <span>impact.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 01 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/project-1.jpg"
+                            alt="SEO Project">
+
+                        <div class="project-overlay">
+
+                            <a href="#" target="_blank">
+                                View Project ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <div class="project-top">
+
+                            <span>
+                                PROJECT 01
+                            </span>
+
+                            <span>
+                                SEO
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            PROJECT NAME
+                        </h3>
+
+                        <p>
+                            Explain the project, website,
+                            industry and the SEO challenge
+                            you worked on.
+                        </p>
+
+
+                        <div class="project-result">
+
+                            <div>
+                                <strong>+00%</strong>
+                                <span>Organic Traffic</span>
+                            </div>
+
+                            <div>
+                                <strong>+00</strong>
+                                <span>Keywords</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Project 02 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/project-2.jpg"
+                            alt="SEO Project">
+
+                        <div class="project-overlay">
+
+                            <a href="#" target="_blank">
+                                View Project ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <div class="project-top">
+
+                            <span>
+                                PROJECT 02
+                            </span>
+
+                            <span>
+                                TECHNICAL SEO
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            PROJECT NAME
+                        </h3>
+
+                        <p>
+                            Add the problem you identified,
+                            the strategy you implemented and
+                            the outcome.
+                        </p>
+
+
+                        <div class="project-result">
+
+                            <div>
+                                <strong>+00%</strong>
+                                <span>Visibility</span>
+                            </div>
+
+                            <div>
+                                <strong>00+</strong>
+                                <span>Keywords</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Project 03 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/project-3.jpg"
+                            alt="SEO Project">
+
+                        <div class="project-overlay">
+
+                            <a href="#" target="_blank">
+                                View Project ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <div class="project-top">
+
+                            <span>
+                                PROJECT 03
+                            </span>
+
+                            <span>
+                                CONTENT SEO
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            PROJECT NAME
+                        </h3>
+
+                        <p>
+                            Describe the content strategy,
+                            keyword targeting and results of
+                            this project.
+                        </p>
+
+
+                        <div class="project-result">
+
+                            <div>
+                                <strong>+00%</strong>
+                                <span>Organic Growth</span>
+                            </div>
+
+                            <div>
+                                <strong>00+</strong>
+                                <span>Pages</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             EDUCATION / CERTIFICATIONS
+        ========================================== -->
+
+        <section class="section education-section">
+
+            <div class="section-top">
+
+                <div class="section-number">
+                    05
+                </div>
+
+                <div class="section-label">
+                    EDUCATION & CERTIFICATIONS
+                </div>
+
+            </div>
+
+
+            <div class="education-grid">
+
+
+                <div class="education-card">
+
+                    <span>
+                        EDUCATION
+                    </span>
+
+                    <h3>
+                        YOUR DEGREE / COURSE
+                    </h3>
+
+                    <p>
+                        University / College Name
+                    </p>
+
+                    <small>
+                        YEAR — YEAR
+                    </small>
 
                 </div>
 
 
-                <div class="timeline-item">
+                <div class="education-card">
 
-                    <div class="timeline-date">
-                        2020 — 2022
-                    </div>
+                    <span>
+                        CERTIFICATION
+                    </span>
 
-                    <div class="timeline-content">
+                    <h3>
+                        SEO / DIGITAL MARKETING CERTIFICATION
+                    </h3>
 
-                        <h3>Education / Internship</h3>
+                    <p>
+                        Certification Provider
+                    </p>
 
-                        <h4>Institute / Organization</h4>
+                    <small>
+                        YEAR
+                    </small>
 
-                        <p>
-                            Add your educational or internship details here.
-                        </p>
+                </div>
 
-                    </div>
+
+                <div class="education-card">
+
+                    <span>
+                        CERTIFICATION
+                    </span>
+
+                    <h3>
+                        GOOGLE / SEO CERTIFICATION
+                    </h3>
+
+                    <p>
+                        Certification Provider
+                    </p>
+
+                    <small>
+                        YEAR
+                    </small>
 
                 </div>
 
@@ -563,34 +1011,57 @@
         </section>
 
 
-        <!-- =========================
+
+        <!-- =========================================
              CONTACT
-        ========================== -->
+        ========================================== -->
 
         <section class="section contact-section" id="contact">
 
             <div class="contact-box">
 
-                <div class="section-heading">
-                    <span>05</span>
-                    <p>CONTACT</p>
+                <div class="section-top">
+
+                    <div class="section-number">
+                        06
+                    </div>
+
+                    <div class="section-label">
+                        CONTACT
+                    </div>
+
                 </div>
 
+
                 <h2>
-                    Have a project
-                    <span>in mind?</span>
+                    Let's build something
+                    <span>search-worthy.</span>
                 </h2>
 
-                <p class="contact-description">
-                    Have an idea, project or opportunity?
-                    Feel free to reach out and let's create something great
-                    together.
+
+                <p>
+                    Have an opportunity, project or collaboration
+                    in mind? Add your contact details below.
                 </p>
 
-                <a href="mailto:your@email.com"
-                   class="email-button">
 
-                    your@email.com
+                <div class="contact-details">
+
+                    <a href="mailto:YOUR-EMAIL@example.com">
+                        YOUR-EMAIL@example.com
+                    </a>
+
+                    <a href="tel:+910000000000">
+                        +91 XXXXX XXXXX
+                    </a>
+
+                </div>
+
+
+                <a href="mailto:YOUR-EMAIL@example.com"
+                    class="contact-button">
+
+                    Get In Touch
 
                     <span>↗</span>
 
@@ -603,41 +1074,49 @@
     </main>
 
 
-    <!-- =========================
+
+    <!-- =========================================
          FOOTER
-    ========================== -->
+    ========================================== -->
 
     <footer class="footer">
 
-        <div class="footer-top">
+        <div class="footer-main">
 
             <a href="#home" class="logo">
-                <span>&lt;</span>YourName<span>/&gt;</span>
+                <span>&lt;</span>
+                YOURNAME
+                <span>/&gt;</span>
             </a>
 
+
             <p>
-                Designed & built with passion.
+                SEO Executive • Digital Marketing • Organic Growth
             </p>
 
-            <div class="footer-social">
+
+            <div class="footer-links">
 
                 <a href="#">LinkedIn</a>
+
                 <a href="#">GitHub</a>
+
                 <a href="#">Instagram</a>
 
             </div>
 
         </div>
 
+
         <div class="footer-bottom">
 
             <p>
-                © <span id="currentYear"></span>
-                Type Your Name. All rights reserved.
+                © <span id="year"></span> YOUR NAME.
+                All Rights Reserved.
             </p>
 
             <a href="#home">
-                Back to top ↑
+                Back to Top ↑
             </a>
 
         </div>
@@ -645,8 +1124,10 @@
     </footer>
 
 
+
     <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
