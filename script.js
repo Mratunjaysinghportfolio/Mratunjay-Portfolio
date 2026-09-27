@@ -1,60 +1,21 @@
-/* =========================================
-   EYEBALL BACKGROUND
-========================================= */
+js/
+└── eye-tracking.js
+/* ==========================================
+   EYE BALL CURSOR TRACKING EFFECT
+   ========================================== */
 
-const eyeBackground = document.getElementById("eyeBackground");
-
-const numberOfEyes = 22;
-
-const eyes = [];
-
-
-// Create eyeballs
-
-for (let i = 0; i < numberOfEyes; i++) {
-
-    const eye = document.createElement("div");
-
-    eye.classList.add("eye");
-
-    // Random position
-
-    eye.style.left = `${Math.random() * 100}%`;
-
-    eye.style.top = `${Math.random() * 100}%`;
-
-    // Random size
-
-    const size = 45 + Math.random() * 65;
-
-    eye.style.width = `${size}px`;
-
-    eye.style.height = `${size * 0.62}px`;
-
-    // Random opacity
-
-    eye.style.opacity = 0.10 + Math.random() * 0.18;
-
-    // Slight random rotation
-
-    eye.style.rotate = `${-15 + Math.random() * 30}deg`;
-
-    eyeBackground.appendChild(eye);
-
-    eyes.push(eye);
-}
-
-
-/* =========================================
-   MOUSE TRACKING
-========================================= */
+const eyes = document.querySelectorAll(".eye");
 
 let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
 
-let currentX = mouseX;
-let currentY = mouseY;
+let currentMouseX = mouseX;
+let currentMouseY = mouseY;
 
+
+/* ------------------------------------------
+   GET CURSOR POSITION
+------------------------------------------ */
 
 document.addEventListener("mousemove", (event) => {
 
@@ -64,59 +25,97 @@ document.addEventListener("mousemove", (event) => {
 });
 
 
-/* =========================================
-   SMOOTH ANIMATION
-========================================= */
+/* ------------------------------------------
+   EYE ANIMATION
+------------------------------------------ */
 
-function animateEyes() {
+function moveEyes() {
 
-    // Smooth cursor movement
+    /*
+     * Smooth cursor movement
+     * This prevents the pupils from moving
+     * suddenly or looking robotic.
+     */
 
-    currentX += (mouseX - currentX) * 0.08;
-    currentY += (mouseY - currentY) * 0.08;
+    currentMouseX +=
+        (mouseX - currentMouseX) * 0.12;
+
+    currentMouseY +=
+        (mouseY - currentMouseY) * 0.12;
 
 
     eyes.forEach((eye) => {
 
-        const rect = eye.getBoundingClientRect();
+        /*
+         * Get the exact position of
+         * each eye on the screen.
+         */
 
-        const eyeCenterX = rect.left + rect.width / 2;
-        const eyeCenterY = rect.top + rect.height / 2;
-
-
-        const deltaX = currentX - eyeCenterX;
-        const deltaY = currentY - eyeCenterY;
-
-
-        const distance = Math.sqrt(
-            deltaX * deltaX +
-            deltaY * deltaY
-        );
+        const eyePosition =
+            eye.getBoundingClientRect();
 
 
         /*
-            Maximum pupil movement
-        */
+         * Find the center of the eye.
+         */
 
-        const maxMovement = 12;
+        const eyeCenterX =
+            eyePosition.left +
+            eyePosition.width / 2;
+
+        const eyeCenterY =
+            eyePosition.top +
+            eyePosition.height / 2;
 
 
-        let pupilX = 0;
-        let pupilY = 0;
+        /*
+         * Calculate the distance between
+         * the cursor and the eye.
+         */
+
+        const x =
+            currentMouseX - eyeCenterX;
+
+        const y =
+            currentMouseY - eyeCenterY;
 
 
-        if (distance > 0) {
+        /*
+         * Calculate the angle/direction
+         * towards the cursor.
+         */
 
-            pupilX =
-                (deltaX / distance) *
-                Math.min(distance / 15, maxMovement);
+        const angle =
+            Math.atan2(y, x);
 
-            pupilY =
-                (deltaY / distance) *
-                Math.min(distance / 15, maxMovement);
 
-        }
+        /*
+         * Maximum distance the pupil
+         * can move inside the eyeball.
+         */
 
+        const maxMovement = 30;
+
+
+        /*
+         * Move pupil towards cursor.
+         */
+
+        const pupilX =
+            Math.cos(angle) * maxMovement;
+
+        const pupilY =
+            Math.sin(angle) * maxMovement;
+
+
+        /*
+         * Send the values to CSS.
+         *
+         * Your CSS should use:
+         *
+         * var(--pupil-x)
+         * var(--pupil-y)
+         */
 
         eye.style.setProperty(
             "--pupil-x",
@@ -131,76 +130,17 @@ function animateEyes() {
     });
 
 
-    requestAnimationFrame(animateEyes);
+    /*
+     * Keep animation running.
+     */
+
+    requestAnimationFrame(moveEyes);
+
 }
 
 
-animateEyes();
+/* ------------------------------------------
+   START EFFECT
+------------------------------------------ */
 
-
-/* =========================================
-   MOBILE MENU
-========================================= */
-
-const menuToggle =
-    document.getElementById("menuToggle");
-
-const navLinks =
-    document.getElementById("navLinks");
-
-
-menuToggle.addEventListener("click", () => {
-
-    navLinks.classList.toggle("active");
-
-});
-
-
-/* Close menu after clicking a link */
-
-document
-    .querySelectorAll(".nav-links a")
-    .forEach((link) => {
-
-        link.addEventListener("click", () => {
-
-            navLinks.classList.remove("active");
-
-        });
-
-    });
-
-
-/* =========================================
-   CURRENT YEAR
-========================================= */
-
-const currentYear =
-    document.getElementById("currentYear");
-
-currentYear.textContent =
-    new Date().getFullYear();
-
-
-/* =========================================
-   SIMPLE SCROLL EFFECT
-========================================= */
-
-window.addEventListener("scroll", () => {
-
-    const header =
-        document.querySelector(".header");
-
-    if (window.scrollY > 50) {
-
-        header.style.background =
-            "rgba(7, 7, 10, 0.92)";
-
-    } else {
-
-        header.style.background =
-            "rgba(7, 7, 10, 0.7)";
-
-    }
-
-});
+moveEyes();
